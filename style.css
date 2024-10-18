@@ -1,0 +1,181 @@
+body{
+    background-color: #110220;
+    margin: 0%;
+    padding: 0%;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .container-fluid{
+    background: linear-gradient(90deg, #0f0031 30%, #010a6f 100%);
+    color: white !important;
+    font-weight: bolder;
+    height: 11rem;
+    position: fixed;
+  }
+  /* .nav-item{
+    padding-top: 4rem;
+    margin-right: 3%;
+  } */
+  .container img{
+  margin-left: 70% !important;
+  border-radius: 50%;
+  margin-top: -250px;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  /* padding-left: 70px; */
+
+    /* padding-top: 4rem; */
+  }
+  .intro-text{
+    margin-top: 13rem;
+  }
+  .navbar-brand{
+  color: #ffffff;
+  font-size: 3.5rem;
+  padding-top: 4rem;
+  }
+  /* .experience-title::after {
+    content: "";
+    display: block;
+    width: 1000px;
+    height: 3px;
+    background-color: #ffbf00;
+    margin: 10px auto 0 auto;
+} */
+.underline {
+  margin-top: 3rem; /* Space between image and line */
+  width: 70rem; /* Same width as the image */
+  border-bottom: 5px solid#f7c223; /* The underline */
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto; /* Center the underline */
+}
+  .social_media{
+    text-align: center;
+  }
+  footer{
+    background-color: rgb(3, 1, 39);
+    color: #ffffff;
+    font-size: larger;
+    font-weight: 600;
+    
+  }
+  #contact h2{
+    text-align: center;
+    color: #fcf6f6;
+    font-size: 6em;
+  }
+  .navbar-nav .nav-link {
+  color: white !important; /* Changes the link color to white */
+  padding-top: 4.5rem;
+  margin-right: 3%;
+  font-size: 1.5rem;
+}
+.navbar-nav .nav-link:hover {
+  color: rgb(163, 221, 240) !important; /* Color on hover */
+  text-decoration: underline;
+}
+.navbar-brand {
+  color: white !important; /* Changes the brand name color to white */
+}
+#about h2{
+  font-size: 6em;
+  text-shadow: 35px 5px 15px #8b8a8a;
+  font-weight: bolder;
+  color: #fcf6f6;
+}
+#education h2{
+  font-size:6em;
+  font-weight: bolder;
+  text-shadow: 35px 5px 15px #8b8a8a;
+  
+  color: #fcf6f6;
+}
+#resume h2{
+  font-size: 6em;
+  font-weight: bolder;
+  text-shadow: 35px 5px 15px #8b8a8a;
+  color: #fcf6f6;
+}
+
+
+
+
+/* .experience-section {
+  padding: 50px;
+}
+
+.experience-title {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 30px;
+  position: relative;
+  
+}
+.experience-title::after {
+  content: "";
+  display: block;
+  width: 1000px; 
+  height: 3px;
+  background-color: #ffbf00; 
+  margin: 10px auto 0 auto;
+}
+.experience-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.experience-card {
+  background-color: #2e2e2e;
+  padding: 30px;
+  border-radius: 10px;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.experience-card h2 {
+  color: #ffbf00;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.experience-card h3 {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 1em;
+  font-weight: bold;
+  color: #8c8c8c;
+  margin-bottom: 15px;
+}
+
+.experience-card p {
+  margin-bottom: 10px;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.experience-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.experience-card ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.experience-card ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ffbf00;
+  font-size: 1.2em;
+} 
+ */
