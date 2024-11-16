@@ -52,6 +52,13 @@ body{
   margin-left: auto;
   margin-right: auto; /* Center the underline */
 }
+/* .vertical-line{
+  border-left:2px solid #f7c223;
+  height:80vh;
+  margin-left: 50rem;
+  margin-down: -50rem;
+
+} */
   .social_media{
     text-align: center;
   }
@@ -63,7 +70,8 @@ body{
     
   }
   #contact h2{
-    text-align: center;
+  text-align: left;
+    
     color: #fcf6f6;
     font-size: 6em;
   }
@@ -82,18 +90,46 @@ body{
 }
 #about h2{
   font-size: 6em;
+  text-align: left;
   text-shadow: 35px 5px 15px #8b8a8a;
   font-weight: bolder;
   color: #fcf6f6;
+  margin: 3rem;
+}
+#about p {
+  font-size: 1.5rem;
+}
+#skills h2{
+  font-size: 6em;
+  text-align: left;
+  font-weight: bolder;
+  text-shadow: 35px 5px 15px #8b8a8a;
+  color: #fcf6f6;
+  
+}
+#skills li{
+  font-size: 1.5rem;
+  color: #a10651;
 }
 #education h2{
   font-size:6em;
+  text-align: left;
+
   font-weight: bolder;
   text-shadow: 35px 5px 15px #8b8a8a;
-  
   color: #fcf6f6;
 }
+
 #resume h2{
+  text-align: left;
+
+  font-size: 6em;
+  font-weight: bolder;
+  text-shadow: 35px 5px 15px #8b8a8a;
+  color: #fcf6f6;
+}
+#contact h2{
+  text-align: left;
   font-size: 6em;
   font-weight: bolder;
   text-shadow: 35px 5px 15px #8b8a8a;
@@ -101,6 +137,94 @@ body{
 }
 
 
+.connectme{
+  margin: 3rem ;
+  padding: 4rem;
+}
+#underline {
+  width: 0;
+  height: 2px;
+  margin: 10px auto;
+  background-image: repeating-linear-gradient(90deg, white 0, white 5px, transparent 5px, transparent 10px);
+  box-shadow: 0 2px 4px gray; /* Shadow effect */
+  animation: growLine 3s forwards;
+}
+
+/* Animation for dot line */
+@keyframes growLine {
+  from {
+      width: 0;
+  }
+  to {
+      width: 200px;
+  }
+}
+.question h2{
+  text-align: left;
+
+  font-size: 3em;
+  font-weight: bolder;
+  text-shadow: 35px 5px 15px #8b8a8a;
+  color: #fcf6f6;
+}
+#chatModal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Chat Form Styling */
+.chat-form {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Close Button */
+.close-btn {
+  color: #aaa;
+  font-size: 20px;
+  float: right;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: black;
+}
+
+/* Input field and Button */
+.chat-form input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.chat-form button {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chat-form button:hover {
+  background-color: #45a049;
+}
 
 
 /* .experience-section {

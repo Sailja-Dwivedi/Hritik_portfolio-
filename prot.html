@@ -6,7 +6,326 @@
   <title>Hritik Pandey Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+<style>
+  body{
+    background-color: #110220;
+    margin: 0%;
+    padding: 0%;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .container-fluid{
+    background: linear-gradient(90deg, #0f0031 30%, #010a6f 100%);
+    color: white !important;
+    font-weight: bolder;
+    height: 11rem;
+    position: fixed;
+  }
+  /* .nav-item{
+    padding-top: 4rem;
+    margin-right: 3%;
+  } */
+  .container img{
+  margin-left: 70% !important;
+  border-radius: 50%;
+  margin-top: -250px;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  /* padding-left: 70px; */
+
+    /* padding-top: 4rem; */
+  }
+  .intro-text{
+    margin-top: 13rem;
+  }
+  .navbar-brand{
+  color: #ffffff;
+  font-size: 3.5rem;
+  padding-top: 4rem;
+  }
+  /* .experience-title::after {
+    content: "";
+    display: block;
+    width: 1000px;
+    height: 3px;
+    background-color: #ffbf00;
+    margin: 10px auto 0 auto;
+} */
+.underline {
+  margin-top: 3rem; /* Space between image and line */
+  width: 70rem; /* Same width as the image */
+  border-bottom: 5px solid#f7c223; /* The underline */
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto; /* Center the underline */
+}
+/* .vertical-line{
+  border-left:2px solid #f7c223;
+  height:80vh;
+  margin-left: 50rem;
+  margin-down: -50rem;
+
+} */
+  .social_media{
+    text-align: center;
+  }
+  footer{
+    background-color: rgb(3, 1, 39);
+    color: #ffffff;
+    font-size: larger;
+    font-weight: 600;
+    
+  }
+  #contact h2{
+  text-align: left;
+    
+    color: #fcf6f6;
+    font-size: 6em;
+  }
+  .navbar-nav .nav-link {
+  color: white !important; /* Changes the link color to white */
+  padding-top: 4.5rem;
+  margin-right: 3%;
+  font-size: 1.5rem;
+}
+.navbar-nav .nav-link:hover {
+  color: rgb(163, 221, 240) !important; /* Color on hover */
+  text-decoration: underline;
+}
+.navbar-brand {
+  color: white !important; /* Changes the brand name color to white */
+}
+#about h2{
+  font-size: 6em;
+  text-align: left;
+  text-shadow: 35px 5px 15px #8b8a8a;
+  font-weight: bolder;
+  color: #fcf6f6;
+  margin: 3rem;
+}
+#about p {
+  font-size: 1.5rem;
+}
+#skills h2{
+  font-size: 6em;
+  text-align: left;
+  font-weight: bolder;
+  text-shadow: 35px 5px 15px #8b8a8a;
+  color: #fcf6f6;
+  
+}
+#skills li{
+  font-size: 1.5rem;
+  color: #a10651;
+}
+#education h2{
+  font-size:6em;
+  text-align: left;
+
+  font-weight: bolder;
+  text-shadow: 35px 5px 15px #8b8a8a;
+  color: #fcf6f6;
+}
+
+#resume h2{
+  text-align: left;
+  font-size: 6em;
+  font-weight: bolder;
+  text-shadow: 35px 5px 15px #8b8a8a;
+  color: #fcf6f6;
+}
+#resume p{
+   margin: 3rem;
+}
+#contact h2{
+  text-align: left;
+  font-size: 6em;
+  font-weight: bolder;
+  text-shadow: 35px 5px 15px #8b8a8a;
+  color: #fcf6f6;
+}
+#contact .contact-item {
+  margin: 0 15px; /* Adjust this value to increase/decrease space between items */
+  text-align: center;
+}
+#contact .rounded-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px; /* Set consistent size for all circles */
+  height: 60px;
+}
+
+.connectme{
+  margin: 3rem ;
+  padding: 4rem;
+}
+/* #underline {
+  width: 0;
+  height: 2px;
+  margin: 10px auto;
+  background-image: repeating-linear-gradient(90deg, white 0, white 5px, transparent 5px, transparent 10px);
+  box-shadow: 0 2px 4px gray; 
+  animation: growLine 3s forwards;
+} */
+
+/* Animation for dot line */
+/* @keyframes growLine {
+  from {
+      width: 0;
+  }
+  to {
+      width: 200px;
+  }
+} */
+.question h2{
+  text-align: left;
+
+  font-size: 3em;
+  font-weight: bolder;
+  text-shadow: 35px 5px 15px #8b8a8a;
+  color: #fcf6f6;
+}
+#chatModal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Chat Form Styling */
+.chat-form {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Close Button */
+.close-btn {
+  color: #aaa;
+  font-size: 20px;
+  float: right;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: black;
+}
+
+/* Input field and Button */
+.chat-form input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.chat-form button {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chat-form button:hover {
+  background-color: #45a049;
+}
+
+/* .experience-section {
+  padding: 50px;
+}
+
+.experience-title {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 30px;
+  position: relative;
+  
+}
+.experience-title::after {
+  content: "";
+  display: block;
+  width: 1000px; 
+  height: 3px;
+  background-color: #ffbf00; 
+  margin: 10px auto 0 auto;
+}
+.experience-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.experience-card {
+  background-color: #2e2e2e;
+  padding: 30px;
+  border-radius: 10px;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.experience-card h2 {
+  color: #ffbf00;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.experience-card h3 {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 1em;
+  font-weight: bold;
+  color: #8c8c8c;
+  margin-bottom: 15px;
+}
+
+.experience-card p {
+  margin-bottom: 10px;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.experience-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.experience-card ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.experience-card ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ffbf00;
+  font-size: 1.2em;
+} 
+ */
+
+</style>
 </head>
 <body>
 
@@ -60,7 +379,8 @@
   <section id="about" class="p-5 text-center">
     <div class="container">
       <h2>About Me</h2>
-      <p style="color: #650232; font-size: larger;">As a recent graduate, I am enthusiastic about beginning my professional journey and applying my knowledge in a real-world environment. With a strong academic background in [Bachelor of Computer Applications], I am keen to develop my skills and contribute to meaningful projects. I am a fast learner, detail-oriented, and committed to continuous improvement. I look forward to bringing fresh perspectives and a strong work ethic to any team I join.
+      <!-- <div id="underline"></div> -->
+      <p style="color: #a10651;">As a recent graduate, I am enthusiastic about beginning my professional journey and applying my knowledge in a real-world environment. With a strong academic background in<b style="color:rgb(164, 80, 2);"> [Bachelor of Computer Applications]</b>, I am keen to develop my skills and contribute to meaningful projects. I am a fast learner, detail-oriented, and committed to continuous improvement. I look forward to bringing fresh perspectives and a strong work ethic to any team I join.
       </p>
     </div>
   </section>
@@ -68,24 +388,33 @@
   <!-- Skills Section -->
   <section id="skills" class="p-5">
     <div class="container">
-      <h2 style="font-weight: bolder; color:rgb(204, 86, 23);font-size: 4rem;">Skills</h2>
-      <ul style="color: #ffffff; font-weight: bolder;">
-        <li>Access Control, Etherchannel, Spanning Tree, Shell Scripting</li>
-        <li>Border Gateway protocol(BGP), Multiprotocol Label Switching (MPLS)</li>
-        <li>IPv4, JLAN Switching</li>
-        <li>Internet protocol Suite (TCP/IP)</li>
-        <li>Routing Protocols</li>
-        <li>Dynamic Host Configuration Protocol (DHCP)</li>
-        <li>Linux System administration</li>
-        <li>Computer Hardware Troubleshooting</li>
+      <h2 >Skills</h2>
+      <!-- <div id="underline"></div> -->
+
+      <ul style="color: #ffffff; font-weight: bolder;margin: 4rem;">
+        <li>System Administration: Experienced in managing and troubleshooting servers, networks,
+           and user access, ensuring seamless IT operations.</li>
+        <li>Network Security: Knowledgeable in implementing security measures, monitoring network traffic, 
+          and managing firewall settings to safeguard data.</li>
+        <li>Problem-Solving: Strong analytical skills to identify and resolve technical issues,
+           enhancing efficiency and minimizing downtime.</li>
+        <li>Virtualization and Cloud: Familiar with virtualization technologies and cloud services for
+           scalable and efficient IT solutions.</li>
+        <li>Cybersecurity Best Practices: Understanding of cybersecurity protocols to protect sensitive 
+          information and prevent unauthorized access.</li>
+        <li>Team Collaboration: Effective communicator and team player, able to coordinate with 
+          cross-functional teams to achieve IT and security goals.</li>
       </ul>
     </div>
+    <!-- <div class="vertical-line"></div> -->
   </section>
+  
    <!-- Resume Section -->
    <section id="resume" class="p-5 text-center">
     <div class="container">
       <h2> Resume</h2>
-      <p>As a cybersecurity enthusiast with one year of experience as a network administrator, I have 
+      <!-- <div id="underline"></div> -->
+      <p style="color: #a10651;">As a cybersecurity enthusiast with one year of experience as a network administrator, I have 
         gained valuable skills in network security, threat detection, and system vulnerabilities.
          Proficient in managing firewalls, encryption, and implementing security protocols, I am 
          dedicated to safeguarding data integrity. With hands-on experience in security tools and network management, I am eager to contribute to a team focused on cybersecurity.</p>
@@ -127,7 +456,8 @@
   <section id="education" class="p-5 text-center">
     <div class="container">
       <h2>Education</h2>
-      <ul type="none">
+      <!-- <div id="underline"></div> -->
+      <ul type="none" style="color: #a10651;" padding="3rem;">
         <li>Bachelor of Computer Applications : 2022-2026 </li>
         <li>Makhanlal Chaturvedi University Bhopal (M.P)</li>
       </ul>
@@ -136,67 +466,71 @@
 
   
       <!-- Contact Section -->
-<section id="contact" class="p-5 text-center">
-  <div class="container">
-    <h2>Contact</h2>
-    <div class="d-flex justify-content-center gap-4">
-
-      <!-- Home Address -->
+      <section id="contact" class="p-5 text-center">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <!-- <div id="underline"></div> -->
+          <div class="connectme">
+          <div class="d-flex justify-content-center gap-5">
+      
+            <!-- Home Address -->
+            <div>
+              <a href="https://www.google.com/maps/place/Indore,+Madhya+Pradesh/" target="_blank" class="text-dark" style="text-decoration: none;">
+                <div class="bg-light p-4 rounded-circle">
+                  <!-- <i class="fas fa-map-marker-alt fa-2x"></i> -->
+                  <i class="fa-solid fa-house"></i>
+                </div>
+                <p class="mt-2">Indore, M.P.</p>
+              </a>
+            </div>
+      
+            <!-- Contact Number -->
+            <!-- Contact Number -->
       <div>
-        <a href="https://www.google.com/maps/place/Indore,+Madhya+Pradesh/" target="_blank" class="text-dark" style="text-decoration: none;">
+        <a href="tel:9304100514" class="text-dark" style="text-decoration: none; cursor: pointer;">
           <div class="bg-light p-4 rounded-circle">
-            <!-- <i class="fas fa-map-marker-alt fa-2x"></i> -->
-            <i class="fa-solid fa-house"></i>
+            <!-- <i class="fas fa-phone-alt fa-2x"></i> -->
+            <i class="fa-solid fa-phone"></i>
           </div>
-          <p class="mt-2">Indore, M.P.</p>
+          <p class="mt-2">9304100514</p>
         </a>
       </div>
-
-      <!-- Contact Number -->
-      <!-- Contact Number -->
-<div>
-  <a href="tel:9304100514" class="text-dark" style="text-decoration: none; cursor: pointer;">
-    <div class="bg-light p-4 rounded-circle">
-      <!-- <i class="fas fa-phone-alt fa-2x"></i> -->
-      <i class="fa-solid fa-phone"></i>
-    </div>
-    <p class="mt-2">9304100514</p>
-  </a>
-</div>
-
-
-
-<!-- Email -->
-<div>
-  <a href="mailto:hkp841243@gmail.com" class="text-dark" style="text-decoration: none;">
-    <div class="bg-light p-3 rounded-circle">
-      <i class="fas fa-envelope fa-2x"></i>
-    </div>
-    <p class="mt-2">hkp841243@gmail.com</p>
-  </a>
-</div>
-
-      <!-- Download Resume -->
+      
+      
+      
+      <!-- Email -->
       <div>
-        <a href="resume.pdf" download="Hritik_Pandey_Resume.pdf" class="text-dark" style="text-decoration: none;">
-          <div class="bg-light p-4 rounded-circle">
-            <i class="fas fa-file-download fa-2x"></i>
+        <a href="mailto:hkp841243@gmail.com" class="text-dark" style="text-decoration: none;">
+          <div class="bg-light p-3 rounded-circle">
+            <i class="fas fa-envelope fa-2x"></i>
           </div>
-          <p class="mt-2">Download Resume</p>
+          <p class="mt-2">hkp841243@gmail.com</p>
         </a>
       </div>
-
-    </div>
-  </div>
-</section>
-
+      
+            <!-- Download Resume -->
+            <div>
+              <a href="Resume_Hritik.pdf" download="Hritik_Pandey_Resume.pdf" class="text-dark" style="text-decoration: none;">
+                <div class="bg-light p-4 rounded-circle">
+                  <i class="fas fa-file-download fa-2x"></i>
+                </div>
+                <p class="mt-2">Download Resume</p>
+              </a>
+            </div>
+      
+          </div>
+        </div>
+        </div>
+      </section>
+      
       <div class="social_media">
         <div class="question">
-          <h2>Have a Question</h2>
+          <h2 >Have a Question......??</h2>
+      <!-- <div id="underline"></div> -->
         
       <div class="mt-4">
-        <a href="https://linkedin.com" class="text-dark"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com" class="text-dark ms-3"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/hritik-kumar-pandey/" class="text-dark"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Hritik407" class="text-dark ms-3"><i class="fab fa-github"></i></a>
         <a href="https://whatsapp.com" class="text-dark ms-3"><i class="fab fa-whatsapp"></i></a>
         <a href="https://instagram.com" class="text-dark ms-3"><i class="fab fa-instagram"></i></a>
         <a href="https://facebook.com" class="text-dark ms-3"><i class="fab fa-facebook"></i></a>
@@ -212,7 +546,37 @@
   <footer class="text-center p-4">
     <p>&copy;2024 Hritik Pandey</p>
   </footer>
-
+  <div id="chatModal">
+    <div class="chat-form">
+      <span class="close-btn" onclick="closeChat()">&times;</span>
+      <h2> Welcome to Hritik Pandey's Portfolio...  &#x1F496; </h2>
+      <h3>Ask your Question</h3>
+      <input type="text" id="userQuery" placeholder="Type your question here...">
+      <button onclick="submitQuery()">Submit</button>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+window.onload = function() {
+    document.getElementById("chatModal").style.display = "block";
+  };
+
+  // Close the chat modal
+  function closeChat() {
+    document.getElementById("chatModal").style.display = "none";
+  }
+
+  // Handle query submission
+  function submitQuery() {
+    let query = document.getElementById("userQuery").value;
+    if (query) {
+      alert("Your question has been submitted: " + query);
+      document.getElementById("userQuery").value = "";
+      closeChat();
+    } else {
+      alert("Please enter a question.");
+    }
+  }
+</script>
 </body>
 </html>
