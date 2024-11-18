@@ -29,7 +29,7 @@ height: 300px;
   /* padding-top: 4rem; */
 }
 .intro-text{
-  margin-top: 13rem;
+margin-top: 13rem;
 }
 .navbar-brand{
 color: #ffffff;
@@ -60,20 +60,18 @@ margin-down: -50rem;
 
 } */
 .social_media{
-  text-align: center;
+text-align: center;
 }
 footer{
-  background-color: rgb(3, 1, 39);
-  color: #ffffff;
-  font-size: larger;
-  font-weight: 600;
-  
+background-color: rgb(3, 1, 39);
+color: #ffffff;
+font-size: larger;
+font-weight: 600;
 }
 #contact h2{
-text-align: left;
-  
-  color: #fcf6f6;
-  font-size: 6em;
+text-align: center;
+color: #fcf6f6;
+font-size: 6em;
 }
 .navbar-nav .nav-link {
 color: white !important; /* Changes the link color to white */
@@ -90,7 +88,7 @@ color: white !important; /* Changes the brand name color to white */
 }
 #about h2{
 font-size: 6em;
-text-align: left;
+text-align: center;
 text-shadow: 35px 5px 15px #8b8a8a;
 font-weight: bolder;
 color: #fcf6f6;
@@ -101,7 +99,7 @@ font-size: 1.5rem;
 }
 #skills h2{
 font-size: 6em;
-text-align: left;
+text-align: center;
 font-weight: bolder;
 text-shadow: 35px 5px 15px #8b8a8a;
 color: #fcf6f6;
@@ -114,24 +112,26 @@ color: #a10651;
 #education h2{
 font-size:6em;
 text-align: left;
-
+text-align: center;
 font-weight: bolder;
 text-shadow: 35px 5px 15px #8b8a8a;
 color: #fcf6f6;
 }
-
+#education li{
+  font-size: 3em;
+}
 #resume h2{
-text-align: left;
+text-align: center;
 font-size: 6em;
 font-weight: bolder;
 text-shadow: 35px 5px 15px #8b8a8a;
 color: #fcf6f6;
 }
 #resume p{
- margin: 3rem;
+font-size: 1.5rem;
 }
 #contact h2{
-text-align: left;
+text-align: center;
 font-size: 6em;
 font-weight: bolder;
 text-shadow: 35px 5px 15px #8b8a8a;
@@ -152,6 +152,9 @@ height: 60px;
 .connectme{
 margin: 3rem ;
 padding: 4rem;
+}
+.connectme p{
+  color:#a10651;
 }
 /* #underline {
 width: 0;
@@ -236,6 +239,50 @@ cursor: pointer;
 
 .chat-form button:hover {
 background-color: #45a049;
+}
+
+
+/* Reduce distance between 'Have a Question' and icons */
+.question-text {
+  margin-top: -1rem; /* Adjust this value as needed */
+  text-align: center;
+  color: white;
+}
+
+/* Social media icons distance and color */
+.social-media-icons a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-media-icons a.linkedin:hover {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+.social-media-icons a.instagram:hover {
+  color: #E1306C; /* Instagram pinkish */
+}
+
+.social-media-icons a.whatsapp:hover {
+  color: #25D366; /* WhatsApp green */
+}
+
+.social-media-icons a.facebook:hover {
+  color: #1877F2; /* Facebook blue */
+}
+.social-media-icons a.github:hover {
+  color: #333; /* GitHub dark gray */
+}
+/* Increase distance between social media icons */
+/* .social-media-icons {
+  gap: 6rem;  
+}
+
+
+/* Adjust top margin between social media and 'Have a Question' */
+.social-media-icons {
+margin-top: -1rem; /* Keeps no extra distance */
 }
 
 /* .experience-section {
