@@ -1,7 +1,7 @@
 body{
   background-color: #110220;
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   /* font-family: 'Times New Roman', Times, serif; */
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -118,7 +118,7 @@ text-shadow: 35px 5px 15px #8b8a8a;
 color: #fcf6f6;
 }
 #education li{
-  font-size: 3em;
+  font-size: 2em;
 }
 #resume h2{
 text-align: center;
@@ -175,8 +175,8 @@ to {
 }
 } */
 .question h2{
-text-align: left;
-
+/* text-align: left; */
+padding-bottom: 5em;
 font-size: 3em;
 font-weight: bolder;
 text-shadow: 35px 5px 15px #8b8a8a;

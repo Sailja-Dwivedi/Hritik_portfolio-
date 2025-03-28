@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hritik Pandey Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #110220;
+      margin: 0;
+      padding: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .container-fluid {
+      background: linear-gradient(90deg, #0f0031 30%, #010a6f 100%);
+      color: white !important;
+      font-weight: bolder;
+      height: 11rem;
+      position: fixed;
+      width: 100%;
+      z-index: 999;
+    }
+
+    .intro-text {
+      margin-top: 13rem;
+      text-align: center;
+    }
+
+    .navbar-brand {
+      color: #ffffff;
+      font-size: 3.5rem;
+      padding-top: 4rem;
+    }
+
+    .navbar-nav .nav-link {
+      color: white !important;
+      padding-top: 4.5rem;
+      margin-right: 3%;
+      font-size: 1.5rem;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: rgb(163, 221, 240) !important;
+      text-decoration: underline;
+    }
+
+    .underline {
+      margin-top: 3rem;
+      width: 70rem;
+      border-bottom: 5px solid #f7c223;
+      border-radius: 4px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    section {
+      padding: 5rem 1rem;
+      color: white;
+    }
+
+    #about h2, #skills h2, #education h2, #resume h2, #contact h2 {
+      font-size: 4em;
+      text-align: center;
+      text-shadow: 35px 5px 15px #8b8a8a;
+      font-weight: bolder;
+      color: #fcf6f6;
+      margin-bottom: 2rem;
+    }
+
+    #skills li, #education li {
+      font-size: 1.5rem;
+      color: #a10651;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: rgb(3, 1, 39);
+      color: #ffffff;
+      text-align: center;
+      padding: 1rem;
+      font-size: larger;
+      font-weight: 600;
+    }
+
+    .connectme {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      margin-top: 2rem;
+    }
+
+    .connectme a {
+      text-decoration: none;
+      color: #a10651;
+      text-align: center;
+    }
+
+    .connectme .rounded-circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      background-color: #f7c223;
+      color: white;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .social-media-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .social-media-icons a {
+      color: white;
+      font-size: 2rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-media-icons a.linkedin:hover {
+      color: #0077b5;
+    }
+
+    .social-media-icons a.instagram:hover {
+      color: #e4405f;
+    }
+
+    .social-media-icons a.github:hover {
+      color: #333;
+    }
+
+    .social-media-icons a.whatsapp:hover {
+      color: #25d366;
+    }
+
+    #chatModal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .chat-form {
+      position: fixed;
+      bottom: 0;
+      right: 20px;
+      background-color: white;
+      width: 300px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .chat-form input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .chat-form button {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .chat-form button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid" id="navbar">
+      <a class="navbar-brand" href="#home">Hritik Pandey</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="hero-section">
+    <div class="intro-text">
+      <p class="lead" style="color: rgb(223, 172, 8); font-size: 3em;">HELLO!</p>
+      <h1 style="color: #ffffff; font-weight: bolder;">I'm Hritik Pandey</h1>
+      <p class="lead" style="color: #ffffff;">Network Engineer | Cyber Security</p>
+      <img src="pic.jpg" alt="Student Photo" class="rounded-circle border border-primary border-2" width="300" height="300">
+    </div>
+  </section>
+  <div class="underline"></div>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p style="color: #a10651;">As a recent graduate, I am enthusiastic about beginning my professional journey and applying my knowledge in a real-world environment. With a strong academic background in <b style="color: rgb(164, 80, 2);">[Bachelor of Computer Applications]</b>, I am keen to develop my skills and contribute to meaningful projects. I am a fast learner, detail-oriented, and committed to continuous improvement. I look forward to bringing fresh perspectives and a strong work ethic to any team I join.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>System Administration: Experienced in managing and troubleshooting servers, networks, and user access, ensuring seamless IT operations.</li>
+        <li>Network Engineering: Adept in designing, implementing, and maintaining network systems for optimal performance and security.</li>
+        <li>Cybersecurity: Skilled in identifying vulnerabilities and implementing effective measures to secure IT infrastructures.</li>
+        <li>Programming Languages: Proficient in Python, JavaScript, and Bash scripting for automation and problem-solving.</li>
+        <li>Tools & Platforms: Hands-on experience with Linux, VMware, AWS, and Cisco networking tools.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <div class="connectme">
+        <a href="mailto:hritik.pandey@example.com">
+          <div class="rounded-circle">
+            <i class="fas fa-envelope"></i>
+          </div>
+          Email Me
+        </a>
+        <a href="https://github.com/hritikpandey" target="_blank">
+          <div class="rounded-circle">
+            <i class="fab fa-github"></i>
+          </div>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/hritikpandey" target="_blank">
+          <div class="rounded-circle">
+            <i class="fab fa-linkedin"></i>
+          </div>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hritik Pandey. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
